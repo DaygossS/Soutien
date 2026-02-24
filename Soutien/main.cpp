@@ -1,10 +1,14 @@
 #include <SFML/Graphics.hpp>
-
+#include "Player.h"
+#include <iostream>
 int main()
 {
+    Player player;
+    std::cout << player.health << std::endl;
+    std::cout << player.name << std::endl;
+    std::cout << player.damage << std::endl;
     sf::RenderWindow window(sf::VideoMode({ 200, 200 }), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+
 
     while (window.isOpen())
     {
@@ -15,7 +19,8 @@ int main()
         }
 
         window.clear();
-        window.draw(shape);
+        player.draw(window);
+
         window.display();
     }
 }
