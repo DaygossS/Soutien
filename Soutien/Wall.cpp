@@ -2,8 +2,8 @@
 
 Wall::Wall()
 {
-	rectangle.setFillColor({sf::Color::White});
-	rectangle.setSize({ 100.f, 100.f });
+	rectangle.setFillColor({sf::Color::Blue});
+	rectangle.setSize({ 50.f, 100.f });
 	rectangle.setPosition({100.f, 100.f});
 }
 
